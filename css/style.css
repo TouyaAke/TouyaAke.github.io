@@ -2,91 +2,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ececec;
-    padding-left: 3vw;
-    padding-right: 4vw;
+@font-face {
+    font-family: 'Typo Round';
+    src: url('fonts/TypoRound-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.logo {
-    max-width: 10vw;
+#body {
+    background-color: white;
+    font-family: 'Typo Round', sans-serif;
 }
 
-
-header .nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
+#hero {
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../img/pizzazhero1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 85vh;
+    position: relative;
 }
 
-header .nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    text-aling: right;
-}
-
-.abrir,
-.cerrar {
-    display: none;
+#menu {
+    background-color: #c60b0e;
+    width: 15vw;
+    height: 6vw;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: none;
+    border-radius: 15px;
     font-size: 2em;
-    background-color: transparent;
-    cursor: pointer;
+    color: white;
+    box-shadow: 18px 20px 16px rgba(0, 0, 0, .9);
+    font-family: "Montserrat";
+    font-weight: 450;
 }
 
 @media screen and (max-width: 850px) {
-    .abrir {
-        display: block;
+
+    #hero {
+        background-position: center bottom;
     }
 
-    .cerrar {
-        padding-top: 2vw;
-        margin-bottom: 5vw;
-        display: block;
-    }
-
-    .logo {
-        max-width: 20vw;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #c60b0e;
-        margin: 0;
-        padding: 4vw;
-        width: 45vw;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav ul {
-        flex-direction: column;
-        align-items: end;
-        font-size: 20px;
-    }
-
-    .nav ul a {
-        color: white;
-        line-height: 8vw;
+    #menu {
+        width: 35vw;
+        height: 10vh;
     }
 }

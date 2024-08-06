@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ececec;
+    padding-left: 3vw;
+    padding-right: 4vw;
+    font-family: "Josefin Slab", serif;
+    height: 15vh;
+}
+
+.logo {
+    max-width: 10vw;
+}
+
+header .nav {
+    z-index: 10;
+}
+
+header .nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header .nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.abrir,
+.cerrar {
+    display: none;
+    border: none;
+    font-size: 2em;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+
+    header {
+        height: 10vh;
+    }
+
+    .abrir {
+        display: block;
+    }
+
+    .cerrar {
+        padding-top: 2vw;
+        margin-bottom: 5vw;
+        display: block;
+    }
+
+    .logo {
+        max-width: 20vw;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #c60b0e;
+        margin: 0;
+        padding: 4vw;
+        width: 45vw;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: end;
+        font-size: 20px;
+    }
+
+    .nav ul a {
+        color: white;
+        line-height: 8vw;
+    }
+}
