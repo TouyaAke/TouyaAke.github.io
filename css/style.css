@@ -14,6 +14,7 @@
 #body {
     background-color: white;
     background-color: #c60b0e;
+    overflow-x: hidden;
 }
 
 #hero {
@@ -77,6 +78,53 @@
     font-family: "Montserrat";
 }
 
+#slider {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Montserrat";
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pizzas-fondo.jpg) center;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+
+}
+
+.card-list .card-item .image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.swiper-pagination,
+.swiper-button-prev,
+swiper-button-next {
+    color: #c60b0e;
+
+}
+
+#footer {
+    height: 800px;
+}
 
 @media screen and (max-width: 850px) {
 
@@ -112,5 +160,12 @@
         width: 60vw;
         border-radius: 0px 0px 10px 10px;
         border: 3px solid black;
+    }
+
+    .card-list .card-item .image {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
     }
 }
