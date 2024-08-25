@@ -1,0 +1,18 @@
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100vw;
+}
+
+#footer .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.mas-info {
+    font-family: 'Typo Round';
+    font-size: 24px;
+    margin-bottom: 20px;
+}

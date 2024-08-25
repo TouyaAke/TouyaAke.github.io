@@ -18,7 +18,7 @@
 }
 
 #hero {
-    background: linear-gradient(160deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../img/pizzazhero1.jpg);
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../img/pizzazhero1.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,8 +100,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background: rgba(255, 255, 255, 0.2);
+    background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     backdrop-filter: blur(5px);
@@ -115,16 +114,42 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.swiper-pagination,
-.swiper-button-prev,
-swiper-button-next {
+.swiper-button-next::after,
+.swiper-button-prev::after {
     color: #c60b0e;
-
+    font-weight: bold;
 }
 
-#footer {
-    height: 800px;
+.swiper-pagination-bullet {
+    opacity: 0.8 !important;
 }
+
+
+.swiper-pagination-bullet-active {
+    background-color: #c60b0e !important;
+    opacity: 1 !important;
+}
+
+#map {
+    padding: 100px;
+    justify-content: center;
+    text-align: center;
+    background-color: #ececec;
+}
+
+#map .text {
+    color: #c60b0e;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: 'Typo Round';
+}
+
+iframe {
+    border-radius: 20px;
+    width: 900px;
+    height: 450px;
+}
+
 
 @media screen and (max-width: 850px) {
 
@@ -167,5 +192,25 @@ swiper-button-next {
         height: 200px;
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    #map {
+        padding: 50px 0px;
+        justify-content: center;
+        text-align: center;
+        background-color: #ececec;
+    }
+
+    #map .text {
+        color: #c60b0e;
+        margin-bottom: 30px;
+        font-size: 40px;
+        font-family: 'Typo Round';
+    }
+
+    iframe {
+        border-radius: 20px;
+        width: 300px;
+        height: 500px;
     }
 }
