@@ -1,11 +1,21 @@
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
+document.querySelector(".bars__menu").addEventListener("click", animateBars);
 
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
-});
+document.querySelector(".bars__menu").addEventListener("click", abrirCerrarMenu);
 
-cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible");
-});
+var line1__bars = document.querySelector(".line1__bars-menu");
+
+var line2__bars = document.querySelector(".line2__bars-menu");
+
+var line3__bars = document.querySelector(".line3__bars-menu");
+
+function animateBars() {
+    line1__bars.classList.toggle("activeLine1__bars-menu");
+    line2__bars.classList.toggle("activeLine2__bars-menu");
+    line3__bars.classList.toggle("activeLine3__bars-menu");
+}
+
+var nav = document.querySelector(".nav");
+
+function abrirCerrarMenu() {
+    nav.classList.toggle("menu");
+}

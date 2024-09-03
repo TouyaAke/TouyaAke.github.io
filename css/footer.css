@@ -1,18 +1,85 @@
+body {
+    overflow-x: hidden;
+}
+
 #footer {
     background-color: black;
     color: white;
     text-align: center;
-    width: 100vw;
+    transition: ease 500ms;
 }
 
 #footer .container {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px 200px;
 }
 
 .mas-info {
     font-family: 'Typo Round';
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+.list-item p {
+    font-family: "Montserrat";
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.13);
+    width: 70%;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+.redes {
+    font-family: 'Typo Round';
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.icon-container a i {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-weight: 1px;
+}
+
+.icon-container a i:hover,
+.list-item p:hover {
+    color: #c60b0e;
+}
+
+@media screen and (max-width: 800px) {
+    #footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+
+    }
+
+    .icon-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .redes {
+        margin-top: 40px;
+    }
+
+    .icon-container a i {
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        padding: 0 10px;
+        font-weight: 1px;
+    }
 }

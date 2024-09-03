@@ -26,17 +26,24 @@
 <body>
 
     <header>
-        <img class="logo" src="img/icon.jpg" alt="logo">
-        <button id="abrir" class="abrir"><i class="fa-solid fa-bars"></i></button>
-        <nav id="nav" class="nav">
-            <button id="cerrar" class="cerrar"><i class="fa-solid fa-x" style="color: #ffffff;"></i></button>
+        <div class="logo"><a href="../index.html"><img src="img/icon.jpg"></a></div>
+        <nav class="nav">
             <ul>
-                <li><a href="../menú.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#cartas">Nosotros</a></li>
+                <li><a href="#map">Encuéntranos</a></li>
+                <li><a href="#footer">Contáctanos</a></li>
             </ul>
         </nav>
+
+        <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+        </div>
+
+        <script src="js/main.js"> </script>
     </header>
 
     <script src="./js/menu.js"></script>
@@ -48,23 +55,27 @@
         </section>
 
         <section id="cartas">
-            <div class="box-cartas">
-                <h3>Título</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quisquam velit consequatur
-                    minima? Ipsum quibusdam facere doloremque nihil cumque perferendis maxime beatae iste debitis, eius,
-                    hic non rerum facilis exercitationem?</p>
-            </div>
-            <div class="box-cartas">
-                <h3>Título</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quisquam velit consequatur
-                    minima? Ipsum quibusdam facere doloremque nihil cumque perferendis maxime beatae iste debitis, eius,
-                    hic non rerum facilis exercitationem?</p>
-            </div>
-            <div class="box-cartas">
-                <h3>Título</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quisquam velit consequatur
-                    minima? Ipsum quibusdam facere doloremque nihil cumque perferendis maxime beatae iste debitis, eius,
-                    hic non rerum facilis exercitationem?</p>
+            <div class="containercards">
+                <div class="card">
+                    <h2>Nuestros Servicios</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente labore quae soluta dolorem
+                        natus laborum, fugit voluptate delectus, iste cumque ullam voluptatem incidunt fugiat non
+                        voluptatibus eaque animi ab tempore.</p>
+                </div>
+                <div class="card">
+                    <h2>Nuestro Equipo</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis eveniet ad, libero,
+                        blanditiis et nihil explicabo officiis beatae ea tempora velit totam, quisquam molestias ipsam
+                        voluptas officia labore alias corrupti!
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Nuestra Misión</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex odio unde, sit repudiandae,
+                        amet, commodi distinctio asperiores necessitatibus in molestias. Voluptatem commodi ab laborum
+                        consequatur exercitationem quas rem distinctio!
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -112,7 +123,7 @@
         </Section>
 
         <section id="map">
-            <p class="text">¡Encuentranos!</p>
+            <p class="text">¡Encuéntranos!</p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.659145843811!2d-70.6961358252815!3d19.427127881851092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1cf3df9cedfc7%3A0xba55befea1199cb9!2sRica%20Pizza%20Express%20%2C%20Rico%20Rotiser%C3%ADas%20Express!5e0!3m2!1ses-419!2sdo!4v1723697601615!5m2!1ses-419!2sdo"
                 style="border:0;" allowfullscreen="" loading="lazy"
@@ -136,10 +147,13 @@
                     <p>Rica pitziña epre</p>
                 </div>
             </div>
+            <div>
+            </div>
+            <P class="redes">Redes</P>
             <div class="icon-container">
-                <i class="fa-bars"></i>
-                <i class="fa-bars"></i>
-                <i class="fa-bars"></i>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
             </div>
         </div>
         <p class="derechos">&copy;2024 - Rica Pizza Express</p>
